@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dwiromadon.puskes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".pengguna.History"
+            tools:ignore="MissingClass" />
+        <activity android:name=".pengguna.DetailPesantrenPengguna"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.UbahJamBuka"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.TambahGambar"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.DetailPesantren"
+            tools:ignore="MissingClass" />
+        <activity android:name=".pengguna.DataPesantren"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.DataPesantren"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.JamBuka"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.InpuData"
+            tools:ignore="MissingClass" />
+        <activity android:name=".pengguna.Maps"
+            tools:ignore="MissingClass" />
+        <activity android:name=".pengguna.HomeUser"
+            tools:ignore="MissingClass" />
+        <activity android:name=".admin.HomeAdmin"
+            tools:ignore="MissingClass" />
+        <activity android:name=".MainActivity"
+            tools:ignore="MissingClass" />
+        <activity android:name=".LoginActivity"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
